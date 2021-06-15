@@ -1,13 +1,20 @@
 package sub.model;
 
-public class Sonata extends Car{
-    public Sonata(double distance) {
-        super(distance);
+public class Sonata implements Car{
+    public double rentDistance;
+
+    public Sonata(double distance){
+        this.rentDistance = distance;
     }
 
     @Override
     public double getDistancePerLiter() {
         return 10;
+    }
+
+    @Override
+    public double getTripDistance() {
+        return this.rentDistance;
     }
 
     @Override

@@ -1,13 +1,20 @@
 package sub.model;
 
-public class K5 extends Car {
-    public K5(double distance) {
-        super(distance);
+public class K5 implements Car {
+    public double rentDistance;
+
+    public K5(double distance){
+        this.rentDistance = distance;
     }
 
     @Override
     public double getDistancePerLiter() {
         return 13;
+    }
+
+    @Override
+    public double getTripDistance() {
+        return this.rentDistance;
     }
 
     @Override
