@@ -12,6 +12,6 @@ public class Avante extends Car {
 
     @Override
     public String getName() {
-        return "Avante";
+        return this.getClass().getSimpleName();
     }
 }

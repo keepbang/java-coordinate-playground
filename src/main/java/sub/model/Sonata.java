@@ -12,6 +12,6 @@ public class Sonata extends Car{
 
     @Override
     public String getName() {
-        return "Sonata";
+        return this.getClass().getSimpleName();
     }
 }
